@@ -1,0 +1,7 @@
+package week2;
+
+public class DataType2 {
+	public static void main(String[] args) {
+		//실수 데이터 타입(심화)
+	}
+}

@@ -1,0 +1,26 @@
+package week2;
+
+public class Print {
+	//필수 메소드(JVM의 시작점)
+	//자동 완성 - ctrl + space bar
+	public static void main(String[] args) {
+		//실행 - f11 or ctrl + f11
+		//sysout + strl + space bar
+		//System.out.println("객체지향 프로그래밍");
+	
+		//주석 단축 - ctrl + /, 
+		/*System.out.println("객체");
+		System.out.println("지향");*/
+		//System.out.println("/*객체 지향*/ 프로그래밍");
+		
+		//숫자 출력시 주의사항
+		//System.out.println(17 + 35);
+		//System.out.println("17 + 35 = " + (17 + 35));
+		
+		//print 출력 주의사항(printf)
+		//%: print format 기호
+		//%s: 문자열, %d: 정수, %f: 실수, %c: 문자, %b: 불린
+		
+		System.out.printf("이름: %s\n", "이인희");
+	}
+}

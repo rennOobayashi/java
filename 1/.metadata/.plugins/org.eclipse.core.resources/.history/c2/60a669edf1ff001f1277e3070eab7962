@@ -1,0 +1,30 @@
+package week2;
+
+public class Casting {
+	public static void main(String[] args) {
+		//강제 타입 변환(Casting)
+		int iData = 65;
+		char cData = (char)iData;
+		System.out.println(cData);
+		
+		long lData = 5000;
+		iData = (int)lData;
+		System.out.println(iData);
+		
+		double dData = 3.14;
+		iData = (int)dData;
+		System.out.println(iData);
+		
+		//casting 하기 전 데이터 손실 여부 확인
+		int iValue = 128;
+		byte bValue;
+		
+		if (Byte.MAX_VALUE >= iValue && iValue >= Byte.MIN_VALUE){
+			bValue = (byte)iValue; //overflow
+			System.out.println(bValue);
+		}
+		else {
+			System.out.println("out of byte size");
+		}
+	}
+}

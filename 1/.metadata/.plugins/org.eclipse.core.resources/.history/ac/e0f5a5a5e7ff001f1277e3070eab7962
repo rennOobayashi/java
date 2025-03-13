@@ -1,0 +1,8 @@
+package week2;
+
+public class DataType1 {
+	public static void main(String[] args) {
+		//기본 데이터 타입
+		//직접 값을 주는 초기값: 리터럴
+	}
+}

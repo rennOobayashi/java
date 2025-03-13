@@ -1,0 +1,18 @@
+package week2;
+
+public class Casting {
+	public static void main(String[] args) {
+		//강제 타입 변환(Casting)
+		int iData = 65;
+		char cData = (char)iData;
+		System.out.println(cData);
+		
+		long lData = 5000;
+		iData = (int)lData;
+		System.out.println(iData);
+		
+		double dData = 3.714;
+		iData = (int)dData;
+		System.out.println(iData);
+	}
+}

@@ -1,0 +1,28 @@
+package week2;
+
+public class DataType2 {
+	public static void main(String[] args) {
+		//실수 데이터 타입(심화)
+		float fValue = 3.14f;
+		double dValue = 3.14; //실수 리터럴의 기본값이 double이라 생략가능
+		
+		System.out.println("fValue = " + fValue);
+		System.out.println("dValue = " + dValue);
+		
+		//실수의 정밀도
+		fValue = 0.1234567890123456789f;
+		dValue = 0.1234567890123456789;
+
+		System.out.println("fValue = " + fValue);
+		System.out.println("dValue = " + dValue);
+		
+		//e 기호 사용
+		int iData = 4500000;
+		float fData = 3e7f;
+		double dData1 = 3e7;
+		double dData2 = 3e-7;
+
+		System.out.println("fValue = " + fValue);
+		System.out.println("dValue = " + dValue);
+	}
+}

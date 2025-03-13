@@ -1,0 +1,17 @@
+package week2;
+
+public class DataType4 {
+	public static void main(String[] args) {
+		byte bData    = 127;
+		char cData    = 90;
+		float fData   = 3.14f;
+		long lData    = 1e10;
+		boolean boolD = true;
+		
+		System.out.println("bData = " + bData);
+		System.out.println("bData = " + cData);
+		System.out.println("bData = " + fData);
+		System.out.println("bData = " + lData);
+		System.out.println("bData = " + boolD);
+	}
+}
