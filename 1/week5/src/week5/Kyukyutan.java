@@ -7,11 +7,11 @@ public class Kyukyutan {
 		Scanner input_num = new Scanner(System.in);
 		int num = 0;
 		
-		System.out.printf("Whats table?: ");
+		System.out.print("Whats the table number?: ");
 		num = input_num.nextInt();
 		
 		System.out.println("Table " + num);
-		for (int i = 1; i < 10; ++i) {
+		for (int i = 1; i <= 9; ++i) {
 			System.out.printf("%d * %d = %d\r\n", num, i, num * i);
 		}
 	}
