@@ -14,5 +14,7 @@ public class Kyukyutan {
 		for (int i = 1; i <= 9; ++i) {
 			System.out.printf("%d * %d = %d\r\n", num, i, num * i);
 		}
+		
+		input_num.close();
 	}
 }
