@@ -16,10 +16,10 @@ public class ReferenceString {
 		int length = myNumber.length();
 		
 		if (length == 13) {
-			System.out.println("올바른 마이넘버");
+			System.out.println("tobashi my number");
 		}
 		else {
-			System.out.println("잘못된 마이넘버");
+			System.out.println("tabashikunai my number");
 		}
 		
 		//String replace
@@ -35,5 +35,37 @@ public class ReferenceString {
 		
 		String verNumber = myNumber.substring(6);
 		System.out.println("Verification number: " + verNumber);
+	
+		//find string
+		//indexOf: Return the index in a string where a specific word begin
+		//if not found, return -1
+		int ind = oldStr.indexOf("programming");
+		
+		if (ind < 0) {
+			System.out.println("not found");
+		}
+		else {
+			System.out.println("guess");
+		}
+
+		//Check if string is included
+		boolean result = oldStr.contains("Java");
+		
+		if (result) {
+			System.out.println("aru");
+		}
+		else {
+			System.out.println("nai");
+		}
+		
+		//Separation string
+		String board = "1,Java,Reference type,String class,hayashi";
+		String[] strArray = board.split(",");
+		
+		//for(int i = 0; i < strArray.length; ++i) {
+		for (String s : strArray) {
+			System.out.printf("%s ", s);
+		}
+		System.out.println();
 	}
 }
