@@ -15,7 +15,7 @@ public class OneOperand1 {
 		
 		short sValue  =  100;
 		//int보다 크기가 작은 경우 결과는 int 타입으로 생성
-		//short sResult = (short)-sValue;
+		//short sResult = -sValue;
 		int   sResult = -sValue;
 		
 		byte bValue  =  100;
