@@ -2,11 +2,22 @@ package week10;
 
 //추상화
 public class Phone {
-	public String model;
-	public String color;
+	private String model;
+	private String color;
 	
-	public Phone() {
-		System.out.println("Phone Constructor");
+	public Phone(String model, String color) {
+		this.model = model;
+		this.color = color;
+		
+		System.out.println("Phone Constructor.");
+	}
+	
+	public String getModel() {
+		return model;
+	}
+	
+	public String getColor() {
+		return color;
 	}
 	
 	public void bell() {
