@@ -10,6 +10,8 @@ public class SmartPhone extends Phone {
 	
 	public void setWifi(boolean wifi) {
 		this.wifi = wifi;
+		
+		System.out.println("Change wifi status.");
 	}
 	
 	public boolean isWifi() {
@@ -17,6 +19,11 @@ public class SmartPhone extends Phone {
 	}
 	
 	public void internet() {
-		System.out.println("Connect.");
+		if (isWifi()) {
+			System.out.println("Connect.");
+		}
+		else {
+			System.out.println("Disconnect");
+		}
 	}
 }
