@@ -12,8 +12,8 @@ public class Car {
 		return company;
 	}
 	
-	public void setCompany(String _company) {
-		company = _company;
+	public void setCompany(String company) {
+		this.company = company;
 	}
 
 	public String getModel() {
@@ -37,6 +37,11 @@ public class Car {
 	}
 
 	public void setMaxSpeed(int maxSpeed) {
-		this.maxSpeed = maxSpeed;
+		if (maxSpeed > 350) {
+			this.maxSpeed = 350;
+		}
+		else {
+			this.maxSpeed = maxSpeed;
+		}
 	}
 }
