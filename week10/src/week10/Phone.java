@@ -5,7 +5,9 @@ public class Phone {
 	public String model;
 	public String color;
 	
-	public Phone() {}
+	public Phone() {
+		System.out.println("Phone Constructor");
+	}
 	
 	public void bell() {
 		System.out.println("Ring, ring!");
