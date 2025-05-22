@@ -17,6 +17,9 @@ public class RemoteControlEx {
 		int input = 0;
 		boolean swap = false;
 		
+		System.out.println();
+		System.out.println("---Volume setting---");
+		
 		do  {
 			System.out.printf(((swap) ? "TV" : "Audio") + "볼륨을 입력해주세요: ");
 			input = sc.nextInt();
@@ -34,5 +37,10 @@ public class RemoteControlEx {
 			
 			swap = !swap;
 		} while(true);
+		
+		tv.setMute(true);
+		audio.setMute(true);
+		tv.setMute(false);
+		audio.setMute(false);
 	}
 }

@@ -12,4 +12,15 @@ public interface RemoteControl {
 	void turnOff();
 	void setVolume(int volume);
 	
+	//그대로 사용 가능(Override도 가능)
+	default void setMute(boolean mute) {
+		if (mute) {
+			System.out.printf("Mute - ");
+			setVolume(MIN_VALUE);
+		}
+		else {
+			System.out.printf("Unmute - ");
+			setVolume(MIN_VALUE);
+		}
+	}
 }

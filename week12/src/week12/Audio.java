@@ -2,6 +2,7 @@ package week12;
 
 public class Audio implements RemoteControl {
 	private int volume = 0;
+	private int save_vol = 0;
 	
 	@Override
 	public void turnOn() {
@@ -28,5 +29,21 @@ public class Audio implements RemoteControl {
 		}
 
 		System.out.println("Audio Volume: " + volume);
+	}
+	
+	@Override
+	public void setMute(boolean mute) {
+		if (mute) {
+			save_vol = volume;
+			RemoteControl.super.setMute(mute);
+			//System.out.printf("Mute - ");
+			//setVolume(MIN_VALUE);
+		}
+		else {
+			volume = save_vol;
+			//RemoteControl.super.setMute(mute);
+			System.out.printf("Unmute - ");
+			setVolume(volume);
+		}
 	}
 }

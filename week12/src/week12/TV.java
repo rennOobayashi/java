@@ -6,7 +6,7 @@ public class TV implements RemoteControl {
 	@Override
 	public void turnOn() {
 		System.out.println("Turn ON");
-		System.out.println("Meteorー");
+		System.out.println("Meteor");
 	}
 	
 	@Override
