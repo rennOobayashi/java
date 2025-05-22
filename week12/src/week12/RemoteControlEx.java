@@ -51,5 +51,16 @@ public class RemoteControlEx {
 		System.out.println("-----");
 		
 		RemoteControl.changeBattery();
+		
+		SmartTV smart = new SmartTV();
+
+		System.out.println();
+		System.out.println("-----");
+		
+		smart.turnOn();
+		smart.search("nintendo.co.jp/job");
+		smart.setMute(true);
+		smart.setMute(false);
+		smart.turnOff();
 	}
 }
