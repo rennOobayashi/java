@@ -1,5 +1,6 @@
 package week12;
 
+import java.rmi.Remote;
 import java.util.Scanner;
 
 public class RemoteControlEx {
@@ -38,9 +39,17 @@ public class RemoteControlEx {
 			swap = !swap;
 		} while(true);
 		
+		System.out.println();
+		System.out.println("-----");
+		
 		tv.setMute(true);
 		audio.setMute(true);
 		tv.setMute(false);
 		audio.setMute(false);
+
+		System.out.println();
+		System.out.println("-----");
+		
+		RemoteControl.changeBattery();
 	}
 }

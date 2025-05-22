@@ -23,4 +23,9 @@ public interface RemoteControl {
 			setVolume(MIN_VALUE);
 		}
 	}
+	
+	//필드처럼 구현 클래스 없이 호출 가능
+	static void changeBattery() {
+		System.out.println("Change Remote control's battery.");
+	}
 }
