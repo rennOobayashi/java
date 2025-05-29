@@ -7,12 +7,12 @@ public class CalcEx {
 		Users user2 = new Users("User2", calc, 0);
 		
 		user1.start();
-		try {
-			Thread.sleep(50);
-		}
-		catch (Exception ex) {
-			System.out.println(ex);
-		}
+//		try {
+//			Thread.sleep(50);
+//		}
+//		catch (Exception ex) {
+//			System.out.println(ex);
+//		}
 		user2.setMemory(50);
 		user2.start();
 	}
