@@ -7,8 +7,7 @@ public class PnConEx {
 		ConsumerThread con = new ConsumerThread(rw);
 		
 		p.start();
-		con.start();
-		
+		con.start();		
 	}
 
 }
