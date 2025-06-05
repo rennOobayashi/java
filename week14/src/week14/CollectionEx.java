@@ -1,8 +1,13 @@
 package week14;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 import java.util.Vector;
 
 public class CollectionEx {
@@ -59,5 +64,34 @@ public class CollectionEx {
 		}
 		System.out.println();
 		
+		Set<String> set = new HashSet<String>();
+		set.add("nintendo");
+		set.add("Microsoft");
+		set.add("Sony");
+		set.add("nintendo");
+		set.add("nintendo");
+		set.add("nintendo");
+		set.add("nintendo");
+		set.add("nintendo");
+		set.add("nintendo");
+
+		Iterator<String> iter = set.iterator();
+		
+		while (iter.hasNext()) {
+			System.out.println(iter.next());
+		}
+		System.out.println();
+		
+		Map<String, String> map = new HashMap<String, String>();
+		map.put("name", "Mario");
+		map.put("Hero", "Mario");
+		map.put("name2", "Luigi");
+		
+		Set<String> key = map.keySet();
+		
+		for (String s : key) {
+			System.out.printf("[%s] %s\r\n", s, map.get(s));
+		}
+		System.out.println();
 	}
 }
