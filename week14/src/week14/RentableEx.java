@@ -10,5 +10,10 @@ public class RentableEx {
 		Car sweetCar = ca.rent();
 		
 		sweetCar.Running();
+		
+		ToyAgency ta = new ToyAgency();
+		Toy nintendo = ta.rent();
+		
+		nintendo.Play();
 	}
 }
