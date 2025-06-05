@@ -86,6 +86,7 @@ public class CollectionEx {
 		map.put("name", "Mario");
 		map.put("Hero", "Mario");
 		map.put("name2", "Luigi");
+		map.put("name", "Super Mario");
 		
 		Set<String> key = map.keySet();
 		
